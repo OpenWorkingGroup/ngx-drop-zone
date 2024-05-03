@@ -4,13 +4,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 See [creating angular libraries](https://angular.io/guide/creating-libraries).
 
-## Development server
+## Development setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+`npm i`
 
-## Code scaffolding
+`npm lint ngx-drop-zone`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`npm test ngx-drop-zone`
+
+`npm build ngx-drop-zone --configuration development`
+
+`npm build ngx-drop-zone`
+
+`npm build ngx-drop-zone --watch`
 
 ## Build
 

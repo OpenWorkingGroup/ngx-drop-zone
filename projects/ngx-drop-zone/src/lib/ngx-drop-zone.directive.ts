@@ -7,17 +7,11 @@ import { Directive, Output, EventEmitter, HostListener } from '@angular/core';
  * @function `onDropZoneExit` emits `dragleave` events.
  * @function `onDropZoneDropt` emits a `FileList`.
  */
-interface DropZone {
-  onDropZoneEnter?(e: DragEvent): void;
-  onDropZoneExit?(e: DragEvent): void;
-  onDropZoneDrop(e: DragEvent): void;
-}
-
 @Directive({
   selector: '[libNgxDropZone]',
   standalone: true,
 })
-export class NgxDropZoneDirective implements DropZone {
+export class NgxDropZoneDirective {
   // @HostBinding('class.dropZoneActive') dropZoneActive = false;
 
   @Output() dropZoneEnter = new EventEmitter();
